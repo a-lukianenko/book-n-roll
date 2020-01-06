@@ -1,0 +1,44 @@
+// PHOTO BLOCK
+.photo-block {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.left,
+.right {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 48px;
+  background-image: url(img/left.png);
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  cursor: pointer;
+  &:hover {
+    filter: saturate(50%);
+    .arrow {
+      opacity: 0.6;
+    }
+  }
+  .arrow {
+    transform: rotate(-45deg);
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+  }
+}
+
+.right {
+  right: 0;
+  background-image: url(img/right.png);
+  .arrow {
+    transform: rotate(135deg);
+  }
+}

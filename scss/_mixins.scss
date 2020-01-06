@@ -1,0 +1,5 @@
+// Padding + border-bottom
+@mixin purple-border() {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(105, 15, 105, 0.3);
+}

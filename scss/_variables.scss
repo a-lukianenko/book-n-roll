@@ -1,0 +1,36 @@
+// FONTS
+
+@font-face {
+  font-family: FiraSans-Regular;
+  src: url(fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: FiraSans-Medium;
+  src: url(fonts/FiraSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: FiraSans-MediumItalic;
+  src: url(fonts/FiraSans-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: FiraSans-SemiBold;
+  src: url(fonts/FiraSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Kleide-Regular;
+  src: url(fonts/Kleide-Regular.ttf);
+}
+
+$firaRegular: FiraSans-Regular;
+$firaMedium: FiraSans-Medium;
+$firaMedItal: FiraSans-MediumItalic;
+$firaSemiBold: FiraSans-SemiBold;
+$kleideRegular: Kleide-Regular;
+
+// COLORS
+$purple: #690f69;
+$cyan: #41cde0;

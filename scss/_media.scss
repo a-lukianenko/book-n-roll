@@ -1,0 +1,323 @@
+@media (max-width: 576px) {
+  // HEADER
+  .header {
+    h1 {
+      font-size: 4.2rem;
+    }
+  }
+
+  .brand {
+    img {
+      width: 70%;
+    }
+    .hamburger {
+      top: -1rem;
+    }
+    .hamburger__menu {
+      display: none;
+    }
+    .icon {
+      margin-top: 0;
+      &.close {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .nav {
+    > a {
+      display: block;
+      margin-top: 4rem;
+    }
+    img {
+      width: 50%;
+      max-width: 155px;
+    }
+    &__socials {
+      font-size: 1.8rem;
+    }
+  }
+  ////////////////////////
+
+  // INFO
+  .info {
+    padding: 2rem 10% 7rem;
+    flex-direction: column;
+
+    .promo__socials .fab:before {
+      font-size: 2rem;
+    }
+
+    .description {
+      margin-top: 5rem;
+      width: auto;
+      color: #474747;
+      &__qty {
+        flex-direction: column;
+        margin-top: 2rem;
+      }
+      .addQty {
+        margin-top: 2rem;
+        margin-left: 0;
+        padding: 15px 35px 15px 55px;
+        width: 100%;
+        max-width: 245px;
+      }
+      .price-tag h2 {
+        font-size: 3.8rem;
+      }
+    }
+  }
+  ////////////////////////
+
+  // PHOTO BLOCK
+  .photo-block {
+    .left,
+    .right {
+      display: none;
+    }
+    .slick-dots li button:before {
+      font-family: 'slick';
+      font-size: 15px;
+      line-height: 5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      content: '•';
+      text-align: center;
+      color: #690f69;
+      -webkit-font-smoothing: antialiased;
+    }
+    .slick-dots li.active button:before {
+      opacity: 0.75;
+      color: #690f69;
+    }
+  }
+  ////////////////////////
+
+  // ANNOTATION
+  .annotation {
+    padding: 8.5rem 10%;
+    background-image: unset;
+    &__summary {
+      padding: 30px 25px 40px 25px;
+      width: auto;
+      img {
+        position: unset;
+        display: block;
+        width: 60%;
+        float: right;
+      }
+    }
+  }
+  ////////////////////////
+
+  // RECOMMENDATIONS
+  .recommendations {
+    padding: 4rem 10% 6rem;
+    h2 {
+      font: 400 2.5rem $firaRegular;
+    }
+    .left,
+    .right {
+      display: none;
+    }
+  }
+  ////////////////////////
+
+  // DELIVERY
+  .delivery {
+    flex-direction: column;
+    &__details {
+      padding: 5rem 10% 6rem;
+      p,
+      a {
+        margin-left: 0;
+      }
+      a {
+        display: block;
+        margin-top: 2rem;
+      }
+    }
+  }
+  ////////////////////////
+
+  // FOOTER
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    &__logo {
+      margin: 2.5rem auto;
+      padding: 0;
+      background-image: unset;
+    }
+    .footer-nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;
+      &__menu {
+        display: block;
+        width: auto;
+        text-align: center;
+        li {
+          margin-bottom: 2rem;
+          margin-right: 0;
+        }
+      }
+      > a {
+        margin-top: 3rem;
+      }
+      a[href^='tel'] {
+        font-size: 2.5rem;
+      }
+      &__socials {
+        margin-top: 3rem;
+      }
+    }
+  }
+  ////////////////////////
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  // INFO
+  .info {
+    flex-direction: column;
+    padding: 2rem 12% 7rem;
+    .promo img {
+      transform: translateX(-50%);
+      left: 50%;
+    }
+    .description {
+      margin-top: 5rem;
+      width: auto;
+      &__qty {
+        flex-direction: row;
+      }
+      .addQty {
+        margin-top: 0;
+      }
+      .price-tag {
+        margin: 0 auto;
+      }
+    }
+  }
+  ////////////////////////
+
+  // ANNOTATION
+  .annotation {
+    padding: 8.5rem 12%;
+    background-position: 97% 67%;
+    &__summary {
+      width: 100%;
+    }
+  }
+  ////////////////////////
+
+  // RECOMMENDATIONS
+  .slick-dots {
+    bottom: -50px;
+  }
+  ////////////////////////
+
+  // DELIVERY
+  .delivery {
+    position: relative;
+    > img {
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      z-index: 2;
+      opacity: 0.3;
+      transform: rotate(20deg);
+      border-radius: 50%;
+      width: 230px;
+    }
+    &__details {
+      position: relative;
+      z-index: 3;
+      padding: 6rem 12%;
+    }
+  }
+  ////////////////////////
+
+  // FOOTER
+  .footer {
+    &__logo {
+      padding: 20rem 0 1.5rem;
+      background-size: cover;
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .footer-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      padding: 0px 10% 2rem;
+      &__menu {
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        li {
+          margin-right: 0;
+        }
+      }
+      a[href^='tel:'] {
+        font: 400 1.4rem/1rem Kleide-Regular;
+      }
+    }
+  }
+  ////////////////////////
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  // INFO
+  .info {
+    padding: 3rem 10% 13rem;
+    .description {
+      width: 43%;
+      .addQty {
+        margin-left: 0rem;
+        width: 21rem;
+        &:before {
+          left: 25px;
+        }
+      }
+    }
+  }
+  ////////////////////////
+
+  // DELIVERY
+  .delivery__details {
+    padding: 10rem 8rem;
+  }
+  ////////////////////////
+
+  // FOOTER
+  .footer {
+    &__logo {
+      background-size: cover;
+    }
+    .footer-nav {
+      padding: 0 7% 2rem;
+      a[href^='tel'] {
+        font-size: 2.2rem;
+      }
+      &__menu {
+        width: 35%;
+      }
+      &__socials a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  ////////////////////////
+}

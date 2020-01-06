@@ -1,0 +1,33 @@
+// RECOMMENDATIONS
+.recommendations {
+  position: relative;
+  padding: 7rem 12% 8rem;
+  background-color: #de3a6f;
+  h2 {
+    text-align: center;
+    font: 700 3rem $firaSemiBold;
+    color: white;
+  }
+  &__list {
+    margin-top: 4rem;
+    img {
+      margin: 26px;
+      box-shadow: -5px 5px 0 2px #b62964, 0 0 0 13px #de3a6f, 0 0 0 16px white;
+      outline: transparent;
+    }
+  }
+}
+
+.leftArrow {
+  @extend .left;
+  left: 0;
+}
+
+.rightArrow {
+  @extend .right;
+}
+
+.leftArrow,
+.rightArrow {
+  top: 55%;
+}

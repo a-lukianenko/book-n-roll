@@ -1,0 +1,25 @@
+// DELIVERY
+.delivery {
+  display: flex;
+  > img {
+    width: 100%;
+  }
+
+  &__details {
+    padding: 10rem 15rem 10rem 8rem;
+  }
+  p {
+    margin-top: 2rem;
+    font: 400 1.3rem/2.4rem $firaRegular;
+    color: #474747;
+  }
+  a {
+    letter-spacing: 1px;
+    font: 400 1.4rem/2.4rem $firaMedItal;
+    color: $purple;
+  }
+  p,
+  a {
+    margin-left: 2rem;
+  }
+}
